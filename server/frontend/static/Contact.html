@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+        <div class="banner" name="contact-header">
+            <h1>Contact Us</h1>
+            Get in touch with Best Cars dealership. We're here to answer any questions and help you find your perfect vehicle.
+        </div>
+
+        <!-- Contact Information Section -->
+        <div style="display: flex; flex-direction: row; margin: auto; gap: 2%;">
+            <div class="card" style="width: 30%; margin: 2%;">
+                <img class="card-img-top" src="/static/contactus.png" alt="Contact">
+                <div class="card-body">
+                    <h5 class="card-title">Get in Touch</h5>
+                    <p class="card-text">Reach out to us through any of our contact channels below</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%; margin: 2%;">
+                <div class="card-body">
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">
+                        <strong>Sales:</strong> sales@bestcars.com<br>
+                        <strong>Support:</strong> support@bestcars.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%; margin: 2%;">
+                <div class="card-body">
+                    <h5 class="card-title">Phone</h5>
+                    <p class="card-text">
+                        <strong>Main Office:</strong> +91-1234-567-890<br>
+                        <strong>Mobile:</strong> +91-9876-543-210
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%; margin: 2%;">
+                <div class="card-body">
+                    <h5 class="card-title">Location</h5>
+                    <p class="card-text">
+                        Best Cars Dealership<br>
+                        123 Main Street<br>
+                        Haryana, India 121001
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="card" style="width: 80%; margin: auto; margin-top: 3%; padding: 2%;">
+            <h3 style="margin-bottom: 2%;">Send us a Message</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Tell us more..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Business Hours Section -->
+        <div class="card" style="width: 80%; margin: auto; margin-top: 3%; margin-bottom: 3%; padding: 2%;">
+            <h3 style="margin-bottom: 2%;">Business Hours</h3>
+            <p>
+                <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+                <strong>Sunday:</strong> Closed
+            </p>
+        </div>
+    </div>
+</div>
+
+</html>
+
