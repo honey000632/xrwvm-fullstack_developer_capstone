@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+# from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
@@ -42,9 +42,7 @@ def login_user(request):
 
     if user is not None:
         login(request, user)
-        return JsonResponse(
-            {"userName": username, "status": "Authenticated"}
-        )
+        return JsonResponse({"userName": username, "status": "Authenticated"})
 
     return JsonResponse({"userName": username})
 
@@ -83,13 +81,9 @@ def registration(request):
 
         login(request, user)
 
-        return JsonResponse(
-            {"userName": username, "status": "Authenticated"}
-        )
+        return JsonResponse({"userName": username, "status": "Authenticated"})
 
-    return JsonResponse(
-        {"userName": username, "error": "Already Registered"}
-    )
+    return JsonResponse({"userName": username, "error": "Already Registered"})
 
 
 def get_dealerships(request, state="All"):
@@ -141,8 +135,6 @@ def add_review(request):
             return JsonResponse({"status": 200})
         except Exception as e:
             logger.error("Error posting review: %s", e)
-            return JsonResponse(
-                {"status": 401, "message": "Error in posting review"}
-            )
+            return JsonResponse({"status": 401, "message": "Error in posting review"})
 
     return JsonResponse({"status": 403, "message": "Unauthorized"})
